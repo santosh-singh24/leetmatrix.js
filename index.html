@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetMatrix</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>LeetMatrix</h1>
+
+        <div class="user-container">
+            <p>Enter your LeetCode username:</p>
+            <div class="user-input-container">
+                <input type="text" placeholder="e.g. johnsmith" id="user-input">
+                <button id="search-btn">Search</button>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="progress">
+                <div class="progress-item">
+                    <div class="easy-progress circle">
+                        <span id="easy-label"></span>
+                        Easy
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="medium-progress circle">
+                        <span id="medium-label"></span>
+                        Medium
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="hard-progress circle">
+                        <span id="hard-label"></span>
+                        Hard
+                    </div>
+                </div>   
+            </div>
+            
+            <div class="stat-cards">
+                <div class="stat-card total">
+                    <h3>Total Solved</h3>
+                    <span id="total-solved">0</span>
+                    <p>questions</p>
+                </div>
+                <div class="stat-card easy">
+                    <h3>Easy</h3>
+                    <span id="easy-solved">0</span>
+                    <p>solved</p>
+                </div>
+                <div class="stat-card medium">
+                    <h3>Medium</h3>
+                    <span id="medium-solved">0</span>
+                    <p>solved</p>
+                </div>
+                <div class="stat-card hard">
+                    <h3>Hard</h3>
+                    <span id="hard-solved">0</span>
+                    <p>solved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
